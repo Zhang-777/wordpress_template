@@ -1,60 +1,44 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta name="robots" content="noindex,follow" />              
+        <meta charset="utf-8">
+        <title>公益財団法人 アジア学生文化協会</title>
+        <meta name="description" content="日本とアジア諸国の青年学生が共同生活を通じて、人間的和合と学術、文化および経済の交流をはかることにより、アジアの親善と世界の平和に貢献することを目的とする財団法人。">
+   		<meta name="viewport" content="width=device-width,user-scalable=no,shrink-to-fit=yes">			
+		<script src="<?php echo get_template_directory_uri(); ?>/js/viewport.js"></script>
+
+        <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/normalize.css">
+        <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/main.css">
+    </head>
+    <body>
 <?php
 /**
  * The template for displaying 404 pages (not found)
  *
  * @link https://codex.wordpress.org/Creating_an_Error_404_Page
  *
- * @package bloomstreet
+ * @package WordPress
+ * @subpackage Twenty_Nineteen
+ * @since Twenty Nineteen 1.0
  */
 
 get_header();
 ?>
-
-	<main id="primary" class="site-main">
-
-		<section class="error-404 not-found">
-			<header class="page-header">
-				<h1 class="page-title"><?php esc_html_e( 'Oops! That page can&rsquo;t be found.', 'bloomstreet' ); ?></h1>
-			</header><!-- .page-header -->
-
-			<div class="page-content">
-				<p><?php esc_html_e( 'It looks like nothing was found at this location. Maybe try one of the links below or a search?', 'bloomstreet' ); ?></p>
-
-					<?php
-					get_search_form();
-
-					the_widget( 'WP_Widget_Recent_Posts' );
-					?>
-
-					<div class="widget widget_categories">
-						<h2 class="widget-title"><?php esc_html_e( 'Most Used Categories', 'bloomstreet' ); ?></h2>
-						<ul>
-							<?php
-							wp_list_categories(
-								array(
-									'orderby'    => 'count',
-									'order'      => 'DESC',
-									'show_count' => 1,
-									'title_li'   => '',
-									'number'     => 10,
-								)
-							);
-							?>
-						</ul>
-					</div><!-- .widget -->
-
-					<?php
-					/* translators: %1$s: smiley */
-					$bloomstreet_archive_content = '<p>' . sprintf( esc_html__( 'Try looking in the monthly archives. %1$s', 'bloomstreet' ), convert_smilies( ':)' ) ) . '</p>';
-					the_widget( 'WP_Widget_Archives', 'dropdown=1', "after_title=</h2>$bloomstreet_archive_content" );
-
-					the_widget( 'WP_Widget_Tag_Cloud' );
-					?>
-
-			</div><!-- .page-content -->
-		</section><!-- .error-404 -->
-
-	</main><!-- #main -->
-
+		<section class="info_vox sec_pad_1" style="margin-top: 100px;">
+			<h2 class="h_type_1">お探しのページが見つかりません。</h2>
+			<span>404 NOT FOUND</span>							
+			<article class="clearfix vox_type_2">
+				<div class="tx">
+					<div class="inn" style="text-align:center;">
+						<span class="in_tx"><br />メニューからご覧になりたいページをご選択ください。
+						</span>
+					</div>
+				</div>
+			</article>
+		</section>
 <?php
 get_footer();
+?>
+    </body>
+</html>
