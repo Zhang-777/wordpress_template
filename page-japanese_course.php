@@ -16,7 +16,11 @@
 		<?php get_header(); ?>			
 		<section class="fv flex-wrap_par">
 			<h2 class="fc_red">日本語コース</h2>
-			<div class="pix"></div>
+			<div class="pix">
+				<div class="pix-logo">
+					<img src="<?php echo get_template_directory_uri(); ?>/img/mv_logo.jpg" alt="" />
+				</div>
+			</div>
 		</section>
 		<section class="info_vox sec_pad_1">
 			<h2 class="h_type_1">日本語教育事業</h2>

@@ -10,12 +10,17 @@
 
         <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/normalize.css">
         <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/main.css">
+		<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/additional.css">
     </head>
     <body class="under jpss">
 		<?php get_header(); ?>					
 		<section class="fv flex-wrap_par">
 			<h2 class="fc_red">日本留学情報</h2>
-			<div class="pix"></div>
+			<div class="pix">
+				<div class="pix-logo">
+					<img src="<?php echo get_template_directory_uri(); ?>/img/mv_logo.jpg" alt="" />
+				</div>
+			</div>
 		</section>
 		<section class="info_vox sec_pad_1">
 			<h2 class="h_type_1">JAPAN STUDY SUPPORTとは</h2>

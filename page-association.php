@@ -18,6 +18,9 @@
 			<h2 class="fc_red">協会紹介</h2>
 			<div class="pix">
 				<img class="pix_over" src="<?php echo get_template_directory_uri(); ?>//img/bus_pic_01.jpg" alt="協会紹介" />
+				<div class="pix-logo">
+					<img src="<?php echo get_template_directory_uri(); ?>/img/mv_logo.jpg" alt="" />
+				</div>
 			</div>
 		</section>
 
@@ -237,7 +240,9 @@
 		<section class="officer sec_pad_1_b wrap_800">
 			<h2 class="h_type_1">役員等</h2>
 			<span>Officer</span>
-			
+			<h2 style="text-align:right;margin-bottom:10px;">
+				[五十音順 2020年7月1日現在]
+			</h2>
 			<div class="tbl_type_2_cover">
 			<article class="tbl_type_2 thz flex-wrap_par flex_sp">
 				<div class="th one">役職</div>
@@ -313,7 +318,43 @@
 		<section class="information sec_pad_1" id="information">
 			<h2 class="h_type_1">情報公開</h2>
 			<span>Informations</span>
+<style>
+.nested{
+margin:20px;
+}
+ul.nested li::before {
+    content: "";
+}
+</style>
+
 			<ul class="list_type_1 wrap_550">
+				<li>定　款
+					<ul class="nested">
+						<li><a href="<?php echo get_template_directory_uri(); ?>/img/abk_2020_careful_reading.pdf" target="_blank">定　款 pdf</a></li>
+					</ul>
+				</li>				
+				<li>2019年度事業報告書
+					<ul class="nested">
+						<li><a href="<?php echo get_template_directory_uri(); ?>/img/abk_2019_report.pdf" target="_blank">事業報告書 pdf</a></li>
+					</ul>
+				</li>
+				<li>2019年度決算書
+					<ul class="nested">
+						<li><a href="<?php echo get_template_directory_uri(); ?>/img/abk_2019_balance_sheet.pdf" target="_blank">貸借対照表 pdf</a></li>
+						<li><a href="<?php echo get_template_directory_uri(); ?>/img/abk_2019_inc_dec_report.pdf" target="_blank">正味財産増減計算書 pdf</a></li>
+						<li><a href="<?php echo get_template_directory_uri(); ?>/img/abk_2019_inventory.pdf" target="_blank">財産目録 pdf</a></li>
+					</ul>
+				</li>
+				<li>2020年度事業計画書と収支予算書
+					<ul class="nested">
+						<li><a href="<?php echo get_template_directory_uri(); ?>/img/abk_2020_plan.pdf" target="_blank">事業計画書 pdf</a></li>
+						<li><a href="<?php echo get_template_directory_uri(); ?>/img/abk_2020_budget.pdf" target="_blank">収支予算書 pdf</a></li>
+					</ul>
+				</li>
+			</ul>
+
+
+			<!--<ul class="list_type_1 wrap_550">
 				<li><a href="<?php echo get_template_directory_uri(); ?>/img/abk_2020_careful_reading.pdf" target="_blank">定款 (令和2年6月10日改正)</a></li>
 				<li><a href="<?php echo get_template_directory_uri(); ?>/img/abk_2020_plan.pdf" target="_blank">2020年度 事業計画</a></li>
 				<li><a href="<?php echo get_template_directory_uri(); ?>/img/abk_2020_budget.pdf" target="_blank">2020年度 収支予算書</a></li>
@@ -321,7 +362,7 @@
 				<li><a href="<?php echo get_template_directory_uri(); ?>/img/abk_2019_balance_sheet.pdf" target="_blank">2019年度 貸借対照表</a></li>
 				<li><a href="<?php echo get_template_directory_uri(); ?>/img/abk_2019_inc_dec_report.pdf" target="_blank">2019年度 正味財産増減計算書</a></li>
 				<li><a href="<?php echo get_template_directory_uri(); ?>/img/abk_2019_inventory.pdf" target="_blank">2019年度 財産目録</a></li>
-			</ul>
+			</ul>-->
 		</section>
 
 		<section class="map" id="map">

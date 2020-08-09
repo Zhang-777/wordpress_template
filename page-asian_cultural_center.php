@@ -12,14 +12,17 @@
         <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/main.css">
         <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/additional.css">
 
-        <link rel="stylesheet" id="bootstrap-css-css" href="<?php echo get_template_directory_uri(); ?>/css/bootstrap.min.css" type="text/css" media="all">
         <link rel="stylesheet" id="parent-custom-css" href="<?php echo get_template_directory_uri(); ?>/css/additional-02.css" type="text/css" media="all">
     </head>
     <body class="under asian_cultural_center">
 		<?php get_header(); ?>		
 		<section class="fv flex-wrap_par">
 			<h2 class="fc_red">アジア文化会館<br>学生・留学生寮</h2>
-			<div class="pix"></div>
+			<div class="pix">
+				<div class="pix-logo">
+					<img src="<?php echo get_template_directory_uri(); ?>/img/mv_logo.jpg" alt="" />
+				</div>
+			</div>
 		</section>
 		<section class="info_vox sec_pad_1" id="greeting">
 			<article class="clearfix vox_type_2">
@@ -43,11 +46,9 @@
 			<span>International student dormitory</span>
 			<div class="tbl_type_2_cover">
 			<article class="tbl_type_2 cus thz flex-wrap_par flex_sp">
-				<div class="th one"></div>
+				<div class="th one">&nbsp;</div>
 				<div class="th two">施設名</div>
 				<div class="th three">定員（所在地）</div>
-			</article>
-			<article class="tbl_type_2 cus tdz flex-wrap_par flex_sp">
 				<div class="td one">１</div>
 				<div class="td two">アジア文化会館（レジデントフロアー）</div>
 				<div class="td three">１１５名（男女）（文京区）</div>
@@ -648,11 +649,9 @@
 			</div>
 			<div class="tbl_cover">
 			<article class="tbl_type_2 cus thz flex-wrap_par flex_sp">
-				<div class="th one"></div>
+				<div class="th one">&nbsp</div>
 				<div class="th two">施設名</div>
 				<div class="th three">定員（所在地）</div>
-			</article>
-			<article class="tbl_type_2 cus tdz flex-wrap_par flex_sp">
 				<div class="td one">１</div>
 				<div class="td two">アジア文化会館（アソシエイトフロアー）</div>
 				<div class="td three">２４名（男女）（文京区）</div>
@@ -669,14 +668,112 @@
 			</span>
 		</section>
 
+
+        <div class="container page">
+            <div class="row dormitory">
+                <div class="col-md-8 content-area">
+                <section class="type type_06" id="d_06">
+                    <div class="inner"><h2>新星学寮</h2>
+                        <div class="clearfix">
+                            <div class="left">
+                                <img src="<?php echo get_template_directory_uri(); ?>/img/acc/5-1.jpg" alt="駒込寮" class="inviewfadeIn">
+                            </div>
+                            <div class="left"><h5>サムネイルをクリックすると拡大します▼</h5>
+                                <a class="gallery cboxElement" href="<?php echo get_template_directory_uri(); ?>/img/acc/5-1.jpg">
+                                    <img src="<?php echo get_template_directory_uri(); ?>/img/acc/5-1.jpg" alt="駒込寮" class="inviewfadeIn">
+                                </a>
+                                <a class="gallery cboxElement" href="<?php echo get_template_directory_uri(); ?>/img/acc/5-2.jpg">
+                                    <img src="<?php echo get_template_directory_uri(); ?>/img/acc/5-2.jpg" alt="駒込寮" class="inviewfadeIn">
+                                </a>
+                                <a class="gallery cboxElement" href="<?php echo get_template_directory_uri(); ?>/img/acc/5-3.jpg">
+                                    <img src="<?php echo get_template_directory_uri(); ?>/img/acc/5-3.jpg" alt="駒込寮" class="inviewfadeIn">
+                                </a>
+                                <a class="gallery cboxElement" href="<?php echo get_template_directory_uri(); ?>/img/acc/5-4.jpg">
+                                    <img src="<?php echo get_template_directory_uri(); ?>/img/acc/5-4.jpg" alt="駒込寮" class="inviewfadeIn">
+                                </a>
+                                <a class="gallery cboxElement" href="<?php echo get_template_directory_uri(); ?>/img/acc/5-5.jpg">
+                                    <img src="<?php echo get_template_directory_uri(); ?>/img/acc/5-5.jpg" alt="駒込寮" class="inviewfadeIn">
+                                </a>
+                                <a class="gallery cboxElement" href="<?php echo get_template_directory_uri(); ?>/img/acc/5-6.jpg">
+                                    <img src="<?php echo get_template_directory_uri(); ?>/img/acc/5-6.jpg" alt="駒込寮" class="inviewfadeIn">
+                                </a>
+                                <a class="gallery cboxElement" href="<?php echo get_template_directory_uri(); ?>/img/acc/5-7.jpg">
+                                    <img src="<?php echo get_template_directory_uri(); ?>/img/acc/5-7.jpg" alt="駒込寮" class="inviewfadeIn">
+                                </a>
+                                <a class="gallery cboxElement" href="<?php echo get_template_directory_uri(); ?>/img/acc/5-8.jpg">
+                                    <img src="<?php echo get_template_directory_uri(); ?>/img/acc/5-8.jpg" alt="駒込寮" class="inviewfadeIn">
+                                </a>
+                                <a class="gallery cboxElement" href="<?php echo get_template_directory_uri(); ?>/img/acc/5-9.jpg">
+                                    <img src="<?php echo get_template_directory_uri(); ?>/img/acc/5-9.jpg" alt="駒込寮" class="inviewfadeIn">
+                                </a>
+
+
+                            </div>
+                        </div>
+                        <div class="clearfix">
+                            <div class="left address" style="width:100%;">
+                                <dl>
+                                    <dt>住所</dt>
+                                    <dd>〒113-0033　東京都文京区本郷6-6-11</dd>
+                                    <dt>人数</dt>
+                                    <dd>14 人</dd>
+                                    <dt>電話</dt>
+                                    <dd>-</dd>
+                                </dl>
+                            </div>
+                            <!--<div class="left map"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3238.5730836238836!2d139.74621565054045!3d35.736716584437694!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188d9437047b6f%3A0xd3d890c4b1bc1f8!2z44CSMTcwLTAwMDMg5p2x5Lqs6YO96LGK5bO25Yy66aeS6L6877yR5LiB55uu77yT77yQ4oiS77yWIO-8sO-8su-8pe-8s--8s--8r-mnkui-vA!5e0!3m2!1sja!2sjp!4v1511671263368?key=AIzaSyCFtdOI3C2QpHaYyGjIrAbEwibNGTZjUKY" width="600" height="450" frameborder="0" style="border:0" allowfullscreen=""></iframe>
+
+                            </div>-->
+                        </div>
+                        <table class="table_type">
+                            <tbody><tr>
+                                <td width="59" class="th">番号</td>
+                                <td width="118" class="th">タイプ</td>
+                                <td width="118" class="th">男女</td>
+                                <td width="118" class="th">入館料</td>
+                                <td width="118" class="th">部屋代(1ヶ月)</td>
+                                <td width="118" class="th">光熱費</td>
+                                <td width="119" class="th">部屋数</td>
+                            </tr>
+                            <tr>
+                                <td class="box03_1">SS1</td>
+                                <td class="box03_1">1人部屋（8.2㎡)</td>
+                                <td class="box03_1">男女</td>
+                                <td class="box03_1">0円</td>
+                                <td class="box03_1">40,000円</td>
+                                <td class="box03_1">0円</td>
+                                <td class="box03_1">14</td>
+                            </tr>
+                            <tr>
+                            </tr>
+                            </tbody></table>
+                        <div class="table_cauton sp_only">
+                            <h5><i class="fa fa-hand-o-right" aria-hidden="true"></i>
+                                横にスクロールしてご覧頂けます。</h5>
+                        </div>
+
+                        <div class="box03_3"><b>個室設備</b><br>・ベッド､机､椅子､エアコン、クローゼット、インターネット（WI-FI）<p style="padding-top:10px; font-weight:bold">共同設備</p>                                                                ・キッチン、冷蔵庫、電子レンジ、洗面所、シャワー､トイレ、ランドリー、WI-FI（１階広間）、シューズボックス
+                            <p style="padding-top:10px; font-weight:bold">注意事項</p>
+                            ・光熱費は部屋代に含まれています。</div>
+                    </div>
+
+                </section>
+				</div>
+				</div>
+				</div>
+
+
 		<section class="shared_dormitory wrap_800 sec_pad_1_t" id="photo_news">
 			<h2 class="h_type_1">PHOTO NEWS</h2>
+			<span> </span>
 			<nav>
 				<ul class="flex-wrap_par flex_sp">
+					<?php for ($y = 2019; $y >= 2008; $y --) : ?>
 					<li class="btn_type_2">
-						<a class="hover" href="/">2019年</a>
+						<a class="hover" href="javascript:;" data-year="<?php echo $y; ?>"><?php echo $y; ?>年</a>
 					</li>
-					<li class="btn_type_2">
+					<?php endfor; ?>
+					<!--<li class="btn_type_2">
 						<a class="hover" href="/">2018年</a>
 					</li>
 					<li class="btn_type_2">
@@ -708,10 +805,130 @@
 					</li>
 					<li class="btn_type_2">
 						<a class="hover" href="/">2008年</a>
-					</li>
+					</li>-->
 				</ul>
 			</nav>
+
 		</section>
+
+<style>
+.gallery-span-container {
+	display:none;
+}
+.gallery-img-container {
+	display:none;
+
+	float: left;
+	width: calc(25% - 20px);
+	height: 250px;
+
+	margin: 10px;
+	padding: 5px;
+	box-sizing: border-box;
+
+	border: 1px solid #eee;
+	border-radius: 3px;
+
+	transition: 0.5s;
+}
+.gallery-img-container a {
+    display: inline-block;
+	position: relative;
+    height: 100%;
+}
+.gallery-img-container a img {
+	max-width: 100%;
+	max-height: 100%;
+	vertical-align: middle;
+}
+.gallery-img-container a span {
+	position: absolute;
+    display: block;
+    width: 100%;
+    bottom: 0;
+    padding: 1rem;
+	font-size: 90%;
+    color: #fff;
+    background: -webkit-linear-gradient(left, rgba(85, 67, 70, 0.85), rgba(69, 80, 91, 0.85)) !important;
+}
+
+.spanitem {
+  width: 800px;
+  max-width: 60%;
+  margin: 0 auto;
+  flex-wrap: wrap;
+  display:flex;  
+  }
+ 
+a.title{
+    color: #b20000;
+    text-decoration: underline;
+}
+div.spandate{
+	width: 176px;
+	font-size: 20px;
+	text-align: left;
+	padding:0 0 0 13px;
+	background: url(<?php echo get_template_directory_uri(); ?>/img/arw01.gif) no-repeat 0 4px;
+}
+
+div.spanlink{
+	width: calc(90% - 176px)
+}
+
+ article{
+	margin-top: 50px;
+	align-items: center;
+	justify-content: space-between
+}
+ article .th span{
+	font-size: 16px;
+}
+</style>
+
+		<div class="container page">
+			<div class="row">
+				<div class="col-md-8 content-area">
+					<div class="inner">
+
+						<?php $loop = new WP_Query( array( 
+						'post_type' => 'photo_news', 
+						'posts_per_page' => 1000 ) ); 
+						while ( $loop->have_posts() ) : 
+							$loop->the_post(); 
+							$post = get_post();
+							$terms = get_the_terms( $post->ID , 'years' );
+							$year = isset($terms[0]) ? $terms[0]->name : '';
+//							$date = date('Y年 n月 j日', strtotime($post->post_date));
+							$date = date('n月 j日', strtotime($post->post_date));
+						?>
+						<?php if ($year < 2015) { ?>
+							<div class="gallery-span-container year-<?php echo $year; ?>">
+								<div class="spanitem">
+									<div class="spandate"><span><?php echo $date;?></span></div>
+								  <div class="spanlink"><a class="title" href="<?php echo get_permalink();?>">
+									<span><?php echo the_title_attribute( 'echo=0' ); ?></span>
+								  </a></div>
+								</div>
+							</div>
+						<?php } else { ?>
+							<div class="gallery-img-container year-<?php echo $year; ?>">
+							  <a href="<?php echo get_permalink();?>">
+								<!--<img class="img-fluid img-thumbnail" src="https://source.unsplash.com/pWkk7iiCoDM/400x300" alt="">-->
+								<?php the_post_thumbnail(); ?>
+								<?php //the_title( '<h2 class="entry-title"><a href="' . get_permalink() . '" title="' . the_title_attribute( 'echo=0' ) . '" rel="bookmark">', '</a></h2>' ); ?>
+								<span><?php echo $date . ':' . the_title_attribute( 'echo=0' ); ?></span>
+							  </a>
+							</div>
+						<?php } ?>
+						<?php endwhile; ?>
+
+					</div>
+
+					<span class="clearfix"></span>
+				</div>
+			</div>
+		</div>
 
 		<section class="sec_pad_1_b assn_for_btn">
 			<aside class="btn_type_1 hover">
@@ -780,6 +997,22 @@
                     }
                 });
 
+				// Photo news
+				$("#photo_news ul li a").click(function() {
+					event.preventDefault();
+
+					let year = $(this).data("year");
+					for (y = 2008; y <= 2019; y ++) {
+						if (y == year) {
+							continue;
+						}
+						$("div.year-"+y).hide();
+					}
+					$("div.year-"+year).fadeIn();
+
+					return false; // stop propogation
+				});
+				$("div.year-2019").show();
 
             });
 

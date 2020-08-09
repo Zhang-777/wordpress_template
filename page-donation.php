@@ -16,7 +16,11 @@
 		<?php get_header(); ?>						
 		<section class="fv flex-wrap_par">
 			<h2 class="fc_red">会費・ご寄付</h2>
-			<div class="pix"></div>
+			<div class="pix">
+				<div class="pix-logo">
+					<img src="<?php echo get_template_directory_uri(); ?>/img/mv_logo.jpg" alt="" />
+				</div>
+			</div>
 		</section>
 		<section class="tocz sec_pad_1_t wrap_800">
 			<div id="toc_container" class="no_bullets">
@@ -126,7 +130,7 @@
 			</article>
 			<h3 class="h_type_5">①インターネットからクレジットカードでのご送金</h3>
 			<div class="btn_type_2">
-				<a href="/" class="hover">
+				<a href="https://www.abk.or.jp/donation_test/credit.php" class="hover" target="_blank">
 					クレジットカード送金
 				</a>
 			</div>
@@ -245,7 +249,7 @@
 •｢アジアの友｣の購読のみご希望の方には、年額2,000円でお送りしています。			
 			</span>
 			<div class="btn_type_2">
-				<a href="/" class="hover">
+				<a href="https://www.abk.or.jp/donation_test/credit.php" class="hover" target="_blank">
 					新規会員申込みフォーム
 				</a>
 			</div>

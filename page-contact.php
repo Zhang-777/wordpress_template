@@ -10,18 +10,43 @@
 
         <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/normalize.css">
         <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/main.css">
+        <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/additional.css">
     </head>
     <body class="under contact">
 		<?php get_header(); ?>					
 		<section class="fv flex-wrap_par">
 			<h2 class="fc_red">お問い合わせ</h2>
-			<div class="pix"></div>
+			<div class="pix">
+				<div class="pix-logo">
+					<img src="<?php echo get_template_directory_uri(); ?>/img/mv_logo.jpg" alt="" />
+				</div>
+			</div>
 		</section>
+<style>
+
+span.error {
+display:block;
+color: #b20000;
+}
+.wpcf7-submit {
+    width: 324px;
+    display: block;
+    margin: 20px auto 0;
+    font-weight: bold;
+    border: 1px solid #b20000;
+    text-align: center;
+    position: relative;
+    font-size: 16px;
+    padding: 20px 0;
+    letter-spacing: .035em;
+    color: #FFF;
+    background-color: #b20000;
+}
+.wpcf7-form-control-wrap {
+width:100%;
+}
+</style>
 		<section class="international_dormitory wrap_800 sec_pad_1">
-			<span class="in_tx">
-お問合せ・ご要望等は、以下のフォームに入力のうえ送信して下さい。<br>
-<span class="fc_red">●</span>は必須入力項目です。			
-			</span>
 					<?php
 
 					// Start the Loop.
@@ -38,9 +63,7 @@
 
 					endwhile; // End the loop.
 					?>
-
 		</section>
-				
 		<?php get_footer(); ?>				
         <script src="<?php echo get_template_directory_uri(); ?>/js/vendor/modernizr-3.5.0.min.js"></script>
         <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>        
@@ -48,5 +71,15 @@
         <script src="<?php echo get_template_directory_uri(); ?>/js/plugins.js"></script>
         <script src="<?php echo get_template_directory_uri(); ?>/js/main.js"></script>
         <script src="<?php echo get_template_directory_uri(); ?>/js/jquery.sliderPro.min.js"></script>
+		
+<script>
+    $('input[type="submit"]').click(function () {
+		var date = new Date();
+		var year = date.getFullYear();
+		var month = date.getMonth() + 1;
+		var day = date.getDate();
+		$('input[name="date"]').val(year + '-' + month + '-' + day + ' ' + date.toLocaleTimeString());
+    });
+</script>
     </body>
 </html>

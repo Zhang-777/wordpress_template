@@ -10,12 +10,17 @@
 
         <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/normalize.css">
         <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/main.css">
+        <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/additional.css">
     </head>
     <body class="under asia">
 		<?php get_header(); ?>				
 		<section class="fv flex-wrap_par">
 			<h2 class="fc_red">アジアの友</h2>
-			<div class="pix"></div>
+			<div class="pix">
+				<div class="pix-logo">
+					<img src="<?php echo get_template_directory_uri(); ?>/img/mv_logo.jpg" alt="" />
+				</div>
+			</div>
 		</section>
 		<section class="info_vox sec_pad_1" id="greeting">
 				<h2 class="h_type_1">アジアの友とは</h2>
@@ -47,214 +52,107 @@
 			</article>
 		</section>
 
+<style>
+
+.gallery-magazine-container {
+	display:none;
+}
+.gallery-img-container {
+	display:none;
+
+	float: left;
+	width: calc(25% - 20px);
+	height: 250px;
+
+	margin: 10px;
+	padding: 5px;
+	box-sizing: border-box;
+
+	border: 1px solid #eee;
+	border-radius: 3px;
+
+	transition: 0.5s;
+}
+.gallery-img-container a {
+    display: inline-block;
+	position: relative;
+    height: 100%;
+}
+.gallery-img-container a img {
+	max-width: 100%;
+	max-height: 100%;
+	vertical-align: middle;
+}
+.gallery-img-container a span {
+	position: absolute;
+    display: block;
+    width: 100%;
+    bottom: 0;
+    padding: 1rem;
+	font-size: 90%;
+    color: #fff;
+    background: -webkit-linear-gradient(left, rgba(85, 67, 70, 0.85), rgba(69, 80, 91, 0.85)) !important;
+}
+</style>
 		<section class="main_stage sec_pad_1_b wrap_1200" id="greeting">
 			<h3 class="asia_year">2019年</h3>
 			<article class="magaz flex-wrap_par">
-				<div class="vx">
-					<h4>2019年10-12月号（No.540）最新号！</h4>
-					<section class="flex_wrapper flex_sp">
-						<figure>
-							<img src="<?php echo get_template_directory_uri(); ?>/img/asia_magazine/tomo540.jpg" alt="2019年10-12月号（No.540）最新号">
-						</figure>
-						<div class="tx">
-							<h5>巻頭</h5>
-							<span>
-								ポスト留学生30万人計画の行方<br>
-								〜留学生30万人計画の総括と将来見通し〜
-							</span>
-							<h5>海外の日本語教育機関</h5>
-							<span>
-								フィリピン日本語文化学院・日本語センター財団
-							</span>
-							<h5>ワーキングインジャパン</h5>
-							<span>
-								グエン ワン フイさん　〜ベトナム
-							</span>
-							<h5>From アジア学生文化協会</h5>
-							<span>
-								日本語教育事業部<br>
-								会館・学寮事業部<br>
-								国際教育支援事業部
-							</span>
-							<h5>連載コラム</h5>
-							<span>
-								泰日工業大学奮闘記㉞<br>
-								「卒業生インタビュー チャイヤシット シラサック（ボート）君」水谷光一
-							</span>
-						</div>
-					</section>
-				</div>
-				<div class="vx">
-					<h4>2019年7-9月号（No.539）</h4>
-					<section class="flex_wrapper flex_sp">
-						<figure>
-							<img src="<?php echo get_template_directory_uri(); ?>/img/asia_magazine/tomo539.jpg" alt="2019年7-9月号（No.539）">
-						</figure>
-						<div class="tx">
-							<h5>巻頭</h5>
-							<span>
-								どうして？どうなる？<br>
-								日本語学校入学希望者の留学ビザ交付率が急降下
-							</span>
-							<h5>From アジア学生文化協会</h5>
-							<span>
-								国際教育支援事業について<br>
-								会館・学寮事業について
-							</span>
-							<h5>Special Intview</h5>
-							<span>
-								山下透さんに聞く<br>
-								韓国人との向き合い方、そしてアジア放送研究会について
-							</span>
-							<h5>留学生インタビュー</h5>
-							<span>
-								ザラディン ファラックさん　〜インドネシア
-							</span>
-							<h5>私の意見私の体験</h5>
-							<span>
-								「貫けば後悔はしない」<br>
-								カ シューイ 〜マレーシア
-							</span>
-							<h5>ABKカレッジ2019特別企画</h5>
-							<span>
-								協定大学・協定機関特別短期日本語研修プログラムを開催
-							</span>
-							<h5>連載コラム</h5>
-							<span>
-								泰日工業大学奮闘記㉝<br>
-								「タイ・日高校生交流への架け橋」水谷光一
-							</span>
-						</div>
-					</section>
-				</div>
-				<div class="vx">
-					<h4>2019年4-6月号（No.538）</h4>
-					<section class="flex_wrapper flex_sp">
-						<figure>
-							<img src="<?php echo get_template_directory_uri(); ?>/img/asia_magazine/tomo538.jpg" alt="2019年4-6月号（No.538）">
-						</figure>
-						<div class="tx">
-							<h5>巻頭</h5>
-							<span>
-								「予備校が支える中国人留学生の日本受験」<br>
-								　インタビュー<br>
-								　1. アジア人材研究所<br>
-								　2.行知学園
-							</span>
-							<h5>私の意見私の体験</h5>
-							<span>
-								「日本語の高い壁を乗り越えて」<br>
-								モントリー パタラパナワン 〜タイ
-							</span>
-							<h5>留学生さん教えてください！</h5>
-							<span>
-								ウズベキスタン
-							</span>
-							<h5>連載コラム</h5>
-							<span>
-								泰日工業大学奮闘記㉜<br>
-								「就職　〜学生が望む職場とは」水谷光一
-							</span>
-							<h5>お礼とご報告</h5>
-							<span>
-								・新星学寮建替え募金
-							</span>
-						</div>
-					</section>
-				</div>
-				<div class="vx">
-					<h4>2019年2月・3月号（No.537）</h4>
-					<section class="flex_wrapper flex_sp">
-						<figure>
-							<img src="<?php echo get_template_directory_uri(); ?>/img/asia_magazine/tomo537.jpg" alt="2019年2月・3月号（No.537）">
-						</figure>
-						<div class="tx">
-							<h5>巻頭</h5>
-							<span>
-								「平成 30 年度外国人留学生在籍状況調査結果」より<br>
-								2018 年の外国人留学生受入れ動向は?
-							</span>
-							<h5>ご報告①</h5>
-							<span>
-								「インド・ムンバイ AAAWI の 25 周年記念式典に参加して」 布施知子(ABK 常務理事)
-							</span>
-							<h5>ご報告②</h5>
-							<span>
-								ABK 草津万座温泉スキーツアー
-							</span>
-							<h5>私の意見私の体験</h5>
-							<span>
-								「大切なのは夢を持ち続けること」<br>
-								クリスチアン ダヴィド ペニャ マルチネス(クリス) 〜コロンビア
-							</span>
-							<h5>連載コラム</h5>
-							<span>
-								泰日工業大学奮闘記㉛<br>
-								「進路　〜学生が望む就職とは」水谷光一
-							</span>
-							<h5>ご報告③</h5>
-							<span>
-								・新星学寮建替え募金（2019年2月28日現在）
-							</span>							
-						</div>
-					</section>
-				</div>
+				<?php $loop = new WP_Query( array( 
+						'post_type' => 'magazine', 
+						'posts_per_page' => 1000 ) ); 
+						while ( $loop->have_posts() ) : 
+							$loop->the_post(); 
+							$post = get_post();
+							$terms = get_the_terms( $post->ID , 'years' );
+							$year = isset($terms[0]) ? $terms[0]->name : '';
+							$year1 = isset($terms[1]) ? $terms[1]->name : '';
+//							$date = date('Y年 n月 j日', strtotime($post->post_date));
+							$date = date('n月 j日', strtotime($post->post_date));							
+							$featured_img_url = get_the_post_thumbnail_url(get_the_ID(),'full');
+
+							$yearclass = "year-" . $year;
+							if (!empty($year1))
+								$yearclass .= " year-" . $year1;
+						?>
+						
+					<div class="gallery-magazine-container vx <?php echo $yearclass;?>">
+						<h4><?php echo the_title_attribute( 'echo=0' ); ?></h4>
+						<section class="flex_wrapper flex_sp">
+							<figure>
+							
+							<img src="<?php echo $featured_img_url; ?>">
+							</figure>
+							<div class="tx">
+								<?php echo $post->post_content; ?>						
+							</div>
+						</section>
+					</div>
+				<?php endwhile; ?>
 			</article>
 
 			<nav>
 				<ul class="flex-wrap_par flex_sp">
-					<li class="btn_type_2">
-						<a class="hover" href="/">2018年</a>
+					<?php for ($y = 2019; $y >= 2010; $y --) : ?>
+					<li class="year_button btn_type_2">
+						<a class="hover" href="javascript:;" data-year="<?php echo $y; ?>"><?php echo $y; ?>年</a>
 					</li>
-					<li class="btn_type_2">
-						<a class="hover" href="/">2017年</a>
-					</li>
-					<li class="btn_type_2">
-						<a class="hover" href="/">2016年</a>
-					</li>
-					<li class="btn_type_2">
-						<a class="hover" href="/">2015年</a>
-					</li>
-					<li class="btn_type_2">
-						<a class="hover" href="/">2014年</a>
-					</li>
-					<li class="btn_type_2">
-						<a class="hover" href="/">2013年</a>
-					</li>
-					<li class="btn_type_2">
-						<a class="hover" href="/">2012年</a>
-					</li>
-					<li class="btn_type_2">
-						<a class="hover" href="/">2011年</a>
-					</li>
-					<li class="btn_type_2">
-						<a class="hover" href="/">2010年</a>
-					</li>
-					<li class="btn_type_2">
-						<a class="hover" href="/">2009年</a>
-					</li>
+					<?php endfor; ?>
 				</ul>
 			</nav>
 
 			<div class="past_year">
 				<h3 class="hover">
 					<img src="img/past_tra.png" alt="">
-					<span>2008年以前はこちら</span>
+					<span>2009年以前はこちら</span>
 				</h3>
 				<nav>
 				<ul class="flex-wrap_par flex_sp">
-					<li class="btn_type_2">
-						<a class="hover" href="/">2008年</a>
+				
+					<?php for ($y = 2009; $y >= 2005; $y --) : ?>
+					<li class="year_button btn_type_2">
+						<a class="hover" href="javascript:;" data-year="<?php echo $y; ?>"><?php echo $y; ?>年</a>
 					</li>
-					<li class="btn_type_2">
-						<a class="hover" href="/">2007年</a>
-					</li>
-					<li class="btn_type_2">
-						<a class="hover" href="/">2006年</a>
-					</li>
-					<li class="btn_type_2">
-						<a class="hover" href="/">2005年</a>
-					</li>
+					<?php endfor; ?>
 				</ul>
 				</nav>
 			</div>
@@ -268,5 +166,31 @@
         <script src="<?php echo get_template_directory_uri(); ?>/js/plugins.js"></script>
         <script src="<?php echo get_template_directory_uri(); ?>/js/main.js"></script>
         <script src="<?php echo get_template_directory_uri(); ?>/js/jquery.sliderPro.min.js"></script>
+		
+        <script>
+            jQuery(function($) {
+
+				// Photo news
+				$(".year_button a").click(function() {
+					event.preventDefault();
+
+					let year = $(this).data("year");
+					for (y = 2005; y <= 2019; y ++) {
+						if (y == year) {
+							continue;
+						}
+						$("div.year-"+y).hide();
+					}
+					$("div.year-"+year).fadeIn();
+//					alert($("h3.asia_year").innerHTML);
+					$("h3.asia_year")[0].innerHTML = year + "年";
+
+					return false; // stop propogation
+				});
+				$("div.year-2019").show();
+
+            });
+
+        </script>
     </body>
 </html>

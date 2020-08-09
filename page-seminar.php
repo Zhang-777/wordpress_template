@@ -10,12 +10,17 @@
 
         <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/normalize.css">
         <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/main.css">
+        <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/additional.css">
     </head>
     <body class="under seminar">
 		<?php get_header(); ?>					
 		<section class="fv flex-wrap_par">
 			<h2 class="fc_red">アジア各国語講座</h2>
-			<div class="pix"></div>
+			<div class="pix">
+				<div class="pix-logo">
+					<img src="<?php echo get_template_directory_uri(); ?>/img/mv_logo.jpg" alt="" />
+				</div>
+			</div>
 		</section>
 		
 		<section class="international_dormitory wrap_800 sec_pad_1">

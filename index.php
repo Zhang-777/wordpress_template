@@ -11,6 +11,7 @@
         <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/normalize.css">
         <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/main.css">
         <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/slider-pro.min.css">
+        <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/additional.css">
     </head>
     <body>
 		<?php get_header(); ?>
@@ -24,10 +25,16 @@
 					<div class="sp-slide">
 						<img class="sp-image" src="<?php echo get_template_directory_uri(); ?>/img/loading.gif" data-src="<?php echo get_template_directory_uri(); ?>/img/slider_2.jpg" alt="スライダー画像" />
 						<div class="sp-layer sp-static" data-position="bottomCenter" data-width="100%">教育機関の<br class="sp">グローバル化をサポート</div>			
+						<div class="top-slid-mv">
+							<img src="<?php echo get_template_directory_uri(); ?>/img/mv_logo.jpg" alt="" />
+						</div>
 					</div>
 					<div class="sp-slide">
 						<img class="sp-image" src="<?php echo get_template_directory_uri(); ?>/img/loading.gif" data-src="<?php echo get_template_directory_uri(); ?>/img/slider_3.jpg" alt="スライダー画像" />
 						<div class="sp-layer sp-static" data-position="bottomCenter" data-width="100%">日本を知る・アジアを知る</div>		
+						<div class="top-slid-mv">
+							<img src="<?php echo get_template_directory_uri(); ?>/img/mv_logo.jpg" alt="" />
+						</div>
 					</div>
 				</div>
 			</div>
@@ -140,7 +147,7 @@
 				</div>
 			</article>
 		</section>
-		<section class="news bg_type_1">
+		<section class="news bg_type_1" style="display: none;">
 			<div class="ns_vxz wrap_1200 flex-wrap_par">
 				<header>
 					<h2 class="h_type_1">お知らせ</h2>

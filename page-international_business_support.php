@@ -10,6 +10,7 @@
 
         <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/normalize.css">
         <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/main.css">
+        <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/additional.css">
     </head>
     <body class="under i_b_s">
 		<?php get_header(); ?>						
@@ -18,6 +19,10 @@
 			<figure>
 				<img src="<?php echo get_template_directory_uri(); ?>/img/ibs_fv_catch.png" alt="外国人留学生受け入れ促進のためのABKアドミッション総合サポート 大学の世界戦略はアドミッションの強化から" class="max_img obj_cent">
 			</figure>
+			
+			<div class="pix-logo">
+				<img src="<?php echo get_template_directory_uri(); ?>/img/mv_logo.jpg" alt="" />
+			</div>
 		</section>
 		<section class="ibs_info">
 			<h2 class="fc_red">外国人留学生受け入れのあらゆる局面でのトータルサポート</h2>
@@ -242,9 +247,50 @@
 				</a>
 			</figure>
 		</section>	
+		
+<style>
+
+span.error {
+display:block;
+color: #b20000;
+}
+.wpcf7-submit {
+    width: 324px;
+    display: block;
+    margin: 20px auto 0;
+    font-weight: bold;
+    border: 1px solid #b20000;
+    text-align: center;
+    position: relative;
+    font-size: 16px;
+    padding: 20px 0;
+    letter-spacing: .035em;
+    color: #FFF;
+    background-color: #b20000;
+}
+
+</style>
 		<section class="ibs_contact sec_pad_1_b" id="contact">
 			<h2 class="h_type_3">業務のご依頼・お問い合わせ</h2>
 			<div class="fom wrap_710">
+					<?php
+
+					// Start the Loop.
+					while ( have_posts() ) :
+						the_post();
+
+		//				get_template_part( 'template-parts/content/content', 'page' );
+						the_content();
+
+						// If comments are open or we have at least one comment, load up the comment template.
+						if ( comments_open() || get_comments_number() ) {
+							comments_template();
+						}
+
+					endwhile; // End the loop.
+					?>
+					</div>
+			<!--<div class="fom wrap_710">
 				<span class="fc_red">※必須マークは必須項目となりますので必ずご入力ください。</span>
 				<form>
 				<article class="flex-wrap_par">
@@ -263,7 +309,7 @@
 				</article>
 				<input type="submit" class="btn_type_send hover" value="送信する">
 				</form>	
-			</div>
+			</div>-->
 		</section>	
 		
 		<?php get_footer(); ?>				
@@ -273,5 +319,15 @@
         <script src="<?php echo get_template_directory_uri(); ?>/js/plugins.js"></script>
         <script src="<?php echo get_template_directory_uri(); ?>/js/main.js"></script>
         <script src="<?php echo get_template_directory_uri(); ?>/js/jquery.sliderPro.min.js"></script>
+				
+<script>
+    $('input[type="submit"]').click(function () {
+		var date = new Date();
+		var year = date.getFullYear();
+		var month = date.getMonth() + 1;
+		var day = date.getDate();
+		$('input[name="date"]').val(year + '-' + month + '-' + day + ' ' + date.toLocaleTimeString());
+    });
+</script>
 	</body>
 </html>
